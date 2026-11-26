@@ -126,8 +126,8 @@ Run the backend and frontend in **two separate terminals** from the `SMARTMATCH`
 
 ```powershell
 cd backend
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 copy .env.example .env
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
@@ -166,7 +166,7 @@ npm run dev
 ## Running Tests
 
 ```powershell
-.\backend\venv\Scripts\pytest.exe tests/test_smartmatch.py -v
+.\backend\.venv\Scripts\pytest.exe tests/test_smartmatch.py -v
 ```
 
 ---
